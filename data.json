@@ -1,0 +1,106 @@
+[{
+        "ID": 1,
+        "Category": "Fashion",
+        "Item name": "socks",
+        "Year of Invention \/ Origin": "8th Century BC",
+        "Description": "Cavemen were the first to wear socks, wrapping animal skins around their feet and tying them at the ankle. Today, China produces roughly 40% of all socks. A design on the ankle of a sock is called a clock!"
+    },
+    {
+        "ID": 2,
+        "Category": "Fashion",
+        "Item name": "glasses",
+        "Year of Invention \/ Origin": "1000 AD",
+        "Description": "The first glass- Reading Stone was invented before Salvino D'Armante created modern glasses. China invented sunglasses that reduced the sun's glare. Surprisingly, while heading cases in court, judges used it to mask their emotions."
+    },
+    {
+        "ID": 3,
+        "Category": "Famous People",
+        "Item name": "Albert Einstein",
+        "Year of Invention \/ Origin": 1879,
+        "Description": "The Nobel Prize-winner, German scientist Albert Einstein loved reading, music, &amp; exploring. His interest in science grew when his father gave him a compass. He presented his first scientific paper at age 16!"
+    },
+    {
+        "ID": 1,
+        "Category": "Famous People",
+        "Item name": "Mahatma Gandhi",
+        "Year of Invention \/ Origin": 1869,
+        "Description": "Gandhiji is known as the Father of the Nation &amp; a pioneer of Indian freedom. His birthday is celebrated as 'International Day of Non-Violence' as he spread truth &amp; ahimsa worldwide. The Indian currency, Rupee, displays a smiling picture of Gandhiji."
+    },
+    {
+        "ID": 2,
+        "Category": "Food",
+        "Item name": "Popcorn",
+        "Year of Invention \/ Origin": 1893,
+        "Description": "Over 5000 years ago, ancient people used Popcorn as an ornament. Charles Cretor invented the first Popcorn machine. Corn can pop upto 3 feet in height, &amp; expand 30 times its original size!"
+    },
+    {
+        "ID": 3,
+        "Category": "Food",
+        "Item name": "French Fries",
+        "Year of Invention \/ Origin": "17th Century",
+        "Description": "Theoretically, French fries originated in Belgium as it was a major potato-growing region. Later, the dish became widely associated with France. McDonald's uses 1% of the world's total potato crop for their French fries."
+    },
+    {
+        "ID": 1,
+        "Category": "Food ",
+        "Item name": "Pizza",
+        "Year of Invention \/ Origin": "18th century",
+        "Description": "World's iconic modern Pizza originated in Italy. This dish, however, has its origins in Ancient Greece and Rome. In 2001, the Italian Space Agency delivered the first pizza to the International Space Station."
+    },
+    {
+        "ID": 2,
+        "Category": "Food ",
+        "Item name": "Tea",
+        "Year of Invention \/ Origin": "2737 BC",
+        "Description": "Emperor Shennong of China was boiling water and some tea leaves blew into the pot. The emperor discovered that the drink had a refreshing effect. Today, after water, tea is the world's second most consumed beverage!"
+    },
+    {
+        "ID": 3,
+        "Category": "Tools",
+        "Item name": "Hammer",
+        "Year of Invention \/ Origin": "30000 BCE",
+        "Description": "Hammers have been used as tools, weapons, and denote a 'Symbol of Power' throughout history! The first hammers were designed without handles. Doctors use a clinical hammer, also called a reflex hammer to study nerve conduction in the human body."
+    },
+    {
+        "ID": 1,
+        "Category": "Tools",
+        "Item name": "Scissors",
+        "Year of Invention \/ Origin": 1761,
+        "Description": "Scissors are hand-held clipping tools. Right-handed scissors are typically sold in stores. if the blade on the top is on the left side, they are designed for left-handed people. The snazzy Scissors come handy in the kitchen, in art and craft, in sewing and much more! "
+    },
+    {
+        "ID": 2,
+        "Category": "Monuments",
+        "Item name": "Taj Mahal",
+        "Year of Invention \/ Origin": "1632-1648",
+        "Description": "Emperor Shah Jahan built the Taj Mahal with the help of 20,000 workers &amp; 1000 elephants in 20 years. It appears pinkish in the morning, milky white in the evening, &amp; golden at night! "
+    },
+    {
+        "ID": 3,
+        "Category": "Monuments",
+        "Item name": "Great Wall of China",
+        "Year of Invention \/ Origin": "220 B.C.E.",
+        "Description": "Qin Shi Huang, the first emperor of China decided to unite the separated walls of 'The Great Wall of China' into one. It is said to be visible from space but truth is, it can not be seen by the naked eye!"
+    },
+    {
+        "ID": 1,
+        "Category": "Inventions",
+        "Item name": "Internet",
+        "Year of Invention \/ Origin": 1969,
+        "Description": "The advent of the Internet is owed to Scientists, Vinton Cerf and Bob Kahn. Finland became the first country to provide legal Internet access in 2010. Internet access is now available even on Mt. Everest! "
+    },
+    {
+        "ID": 2,
+        "Category": "Inventions",
+        "Item name": "TV",
+        "Year of Invention \/ Origin": 1929,
+        "Description": "\nEngineer Philo Taylor Farnsworth is credited for inventing the first electric Television, capable of producing high-quality images. 'Crusader Rabbit' was the first exclusive- TV Cartoon series!\n"
+    },
+    {
+        "ID": 3,
+        "Category": "Inventions",
+        "Item name": "Computer",
+        "Year of Invention \/ Origin": 1822,
+        "Description": "\nEngineer Philo Taylor Farnsworth is credited for inventing the first electric Television, capable of producing high-quality images. 'Crusader Rabbit' was the first exclusive- TV Cartoon series!\n"
+    }
+]

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: stretch;
+        }
+        
+        ul li {
+            list-style: none;
+            border: 1px solid #ccc;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <button type="button" onclick="window.open('https://navneet.authlink.me', '_self')" style="border: none; background: transparent; outline: none;">
+   <img src="https://otpless-cdn.s3.ap-south-1.amazonaws.com/otpless_button.svg" style="width:300px" />
+   </button>
+    <div>
+        <button id="generate">Click</button>
+    </div>
+    <div id="list"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <br>
+    <script>
+        let arr = [{
+            id: 1,
+            category: "Fashion",
+            item_name: "socks",
+            year_of_invention_origin: "8th Century BC",
+            description: "Cavemen were the first to wear socks, wrapping animal skins around their feet and tying them at the ankle. Today, China produces roughly 40% of all socks. A design on the ankle of a sock is called a clock!"
+        }, {
+            id: 2,
+            category: "Fashion",
+            item_name: "glasses",
+            year_of_invention_origin: "1000 AD",
+            description: "The first glass- Reading Stone was invented before Salvino D'Armante created modern glasses. China invented sunglasses that reduced the sun's glare. Surprisingly, while heading cases in court, judges used it to mask their emotions."
+        }, {
+            id: 3,
+            category: "Famous People",
+            item_name: "Albert Einstein",
+            year_of_invention_origin: 1879,
+            description: "The Nobel Prize-winner, German scientist Albert Einstein loved reading, music, &amp; exploring. His interest in science grew when his father gave him a compass. He presented his first scientific paper at age 16!"
+        }, {
+            id: 1,
+            category: "Famous People",
+            item_name: "Mahatma Gandhi",
+            year_of_invention_origin: 1869,
+            description: "Gandhiji is known as the Father of the Nation &amp; a pioneer of Indian freedom. His birthday is celebrated as 'International Day of Non-Violence' as he spread truth &amp; ahimsa worldwide. The Indian currency, Rupee, displays a smiling picture of Gandhiji."
+        }, {
+            id: 2,
+            category: "Food",
+            item_name: "Popcorn",
+            year_of_invention_origin: 1893,
+            description: "Over 5000 years ago, ancient people used Popcorn as an ornament. Charles Cretor invented the first Popcorn machine. Corn can pop upto 3 feet in height, &amp; expand 30 times its original size!"
+        }, {
+            id: 3,
+            category: "Food",
+            item_name: "French Fries",
+            year_of_invention_origin: "17th Century",
+            description: "Theoretically, French fries originated in Belgium as it was a major potato-growing region. Later, the dish became widely associated with France. McDonald's uses 1% of the world's total potato crop for their French fries."
+        }, {
+            id: 1,
+            category: "Food ",
+            item_name: "Pizza",
+            year_of_invention_origin: "18th century",
+            description: "World's iconic modern Pizza originated in Italy. This dish, however, has its origins in Ancient Greece and Rome. In 2001, the Italian Space Agency delivered the first pizza to the International Space Station."
+        }, {
+            id: 2,
+            category: "Food ",
+            item_name: "Tea",
+            year_of_invention_origin: "2737 BC",
+            description: "Emperor Shennong of China was boiling water and some tea leaves blew into the pot. The emperor discovered that the drink had a refreshing effect. Today, after water, tea is the world's second most consumed beverage!"
+        }, {
+            id: 3,
+            category: "Tools",
+            item_name: "Hammer",
+            year_of_invention_origin: "30000 BCE",
+            description: "Hammers have been used as tools, weapons, and denote a 'Symbol of Power' throughout history! The first hammers were designed without handles. Doctors use a clinical hammer, also called a reflex hammer to study nerve conduction in the human body."
+        }, {
+            id: 1,
+            category: "Tools",
+            item_name: "Scissors",
+            year_of_invention_origin: 1761,
+            description: "Scissors are hand-held clipping tools. Right-handed scissors are typically sold in stores. if the blade on the top is on the left side, they are designed for left-handed people. The snazzy Scissors come handy in the kitchen, in art and craft, in sewing and much more! "
+        }, {
+            id: 2,
+            category: "Monuments",
+            item_name: "Taj Mahal",
+            year_of_invention_origin: "1632-1648",
+            description: "Emperor Shah Jahan built the Taj Mahal with the help of 20,000 workers &amp; 1000 elephants in 20 years. It appears pinkish in the morning, milky white in the evening, &amp; golden at night! "
+        }, {
+            id: 3,
+            category: "Monuments",
+            item_name: "Great Wall of China",
+            year_of_invention_origin: "220 B.C.E.",
+            description: "Qin Shi Huang, the first emperor of China decided to unite the separated walls of 'The Great Wall of China' into one. It is said to be visible from space but truth is, it can not be seen by the naked eye!"
+        }, {
+            id: 1,
+            category: "Inventions",
+            item_name: "Internet",
+            year_of_invention_origin: 1969,
+            description: "The advent of the Internet is owed to Scientists, Vinton Cerf and Bob Kahn. Finland became the first country to provide legal Internet access in 2010. Internet access is now available even on Mt. Everest! "
+        }, {
+            id: 2,
+            category: "Inventions",
+            item_name: "TV",
+            year_of_invention_origin: 1929,
+            description: "\nEngineer Philo Taylor Farnsworth is credited for inventing the first electric Television, capable of producing high-quality images. 'Crusader Rabbit' was the first exclusive- TV Cartoon series!\n"
+        }, {
+            id: 3,
+            category: "Inventions",
+            item_name: "Computer",
+            year_of_invention_origin: 1822,
+            description: "\nEngineer Philo Taylor Farnsworth is credited for inventing the first electric Television, capable of producing high-quality images. 'Crusader Rabbit' was the first exclusive- TV Cartoon series!\n"
+        }];
+
+        // let seenPairs = new Set();
+
+        // function getRandomPair() {
+        //     let index1 = Math.floor(Math.random() * arr.length);
+        //     let index2 = Math.floor(Math.random() * arr.length);
+        //     while (index1 === index2 || seenPairs.has(index1 + ',' + index2) || seenPairs.has(index2 + ',' + index1)) {
+        //         index1 = Math.floor(Math.random() * arr.length);
+        //         index2 = Math.floor(Math.random() * arr.length);
+        //     }
+        //     let pair = [arr[index1], arr[index2]];
+        //     seenPairs.add(index1 + ',' + index2);
+        //     displayPairs(pair)
+        //     return pair;
+        // }
+        // getRandomPair(arr);
+
+        // function displayPairs(pair) {
+        //     console.log("PAIR", pair);
+
+        //     let pairsDiv = document.getElementById("pairs");
+        //     // seenPairs.forEach(function(index, pair) {
+        //     //     console.log("I", index);
+        //     //     let pairElem = document.createElement("div");
+        //     //     pairElem.innerHTML = pair[0].ID;
+        //     //     pairsDiv.appendChild(pairElem);
+        //     // });
+        //     pair.forEach(function callback(value, index) {
+        //         let pairElem = document.createElement("div");
+        //         pairElem.innerText = `${pair[index].category} - ${pair[index].item_name}`;
+        //         pairsDiv.appendChild(pairElem);
+        //     });
+        // }
+        //////////////////////////////////////////////////////////////////////////////
+
+        // function getUniqueRandomPair() {
+        //     var randomIndex1 = Math.floor(Math.random() * arr.length);
+        //     var randomIndex2 = Math.floor(Math.random() * arr.length);
+        //     while (randomIndex1 == randomIndex2) {
+        //         randomIndex2 = Math.floor(Math.random() * arr.length);
+        //     }
+        //     return [arr[randomIndex1], arr[randomIndex2]];
+        // }
+        // console.log(getUniqueRandomPair());
+
+        ///////////////////////////////////////////////////////////////////////////////
+        var generatedList = []
+        var pair;
+
+        function getRandNum(arryList) {
+            var randInd1 = Math.floor(Math.random() * arr.length);
+            var randInd2 = Math.floor(Math.random() * arr.length);
+            while (randInd1 == randInd2) {
+                randInd2 = Math.floor(Math.random() * arr.length);
+            }
+            pair = [arr[randInd1], arr[randInd2]];
+            return pair;
+            // return [arr[randInd1], arr[randInd2]];
+        }
+
+        $(document).ready(function() {
+            $("#generate").on("click", function() {
+                getRandNum(arr);
+                generatedList.push(pair)
+                console.log("X", generatedList);
+
+                var list = $("<ul>");
+                $.each(getRandNum(arr), function(index, value) {
+                    list.append(`<li><button class="check" data-id=${value.id}>${value.id}-${value.item_name}</button class="check"></li>`);
+                });
+                $("#list").html(list);
+                $(".check").on("click", function() {
+                    var dataId = $(this).attr("data-id");
+                    alert("The data-id of clicked item is: " + dataId);
+                })
+            })
+
+        });
+    </script>
+</body>
+
+</html>
